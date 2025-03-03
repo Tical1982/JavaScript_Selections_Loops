@@ -61,7 +61,13 @@ while (c <=100) {
 
 //Exercise 4
 
+let value = Math.round((Math.random() * 500)); // creates a random number between 0 and 500
+let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+
+
+
 let found = false;
+
 for ( i = 0; i <= n; i ++ )  {
     if ( i === value ) {
         console.log ("Found value!");
@@ -73,3 +79,4 @@ for ( i = 0; i <= n; i ++ )  {
 if ( !found) {
     console.log("Did not find value");
 }
+
